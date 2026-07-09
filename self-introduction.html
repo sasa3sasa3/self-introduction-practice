@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介-佐々木 菜摘</title>
+</head>
+<body>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+    <p>名前：佐々木 菜摘</p>
+    <p>年齢：27歳</p>
+    <p>出身地：神奈川県</p>
+    <p>趣味：漫画、アニメ、ゲーム</p>
+
+    <h2>好きなもの</h2>
+    <ul>
+        <li>みかん</li>
+        <li>うどん</li>
+        <li>海鮮</li>
+    </ul>
+
+    <h2>今年の目標</h2>
+    <ol>
+        <li>学習を習慣化する</li>
+        <li>教材を2周してテスト合格</li>
+        <li>基本的なプログラミングをマスターする</li>
+    </ol>
+
+    <h2>リンク</h2>
+    <a href="https://www.github.com/sasa3sasa3" target="_blank">私のGitHub</a>
+
+    <h2>好きな風景</h2>
+    <img src="C:/Users/sasa0/html-practice/5-1-7_hands-on/self-introduction-practice/landscape.jpg" alt="好きな風景" width="400">
+
+    <h2>お問い合わせ</h2>
+    <form action="/submit" method="POST">
+        <label>
+            <p>お名前：
+            <input type="text" name="username" placeholder="お名前" required></p>
+        </label>
+        <label>
+            <p>お問い合わせ種別：
+            <select name="quesition">
+            <option value="general">一般的なお問い合わせ</option>
+            <option value="comments and requests">ご意見・ご要望</option></select></p>
+        </label>
+        <label>
+            <p>お問い合わせ内容：
+            <textarea name="message" rows="5" cols="40" placeholder="お問い合わせ内容" required></textarea></p>
+        </label>
+        <p><label>
+            送信ボタン：
+            <button type="submit">送信する</button>
+        </label></p>
+    </form>
+</body>
+</html>
