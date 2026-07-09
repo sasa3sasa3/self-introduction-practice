@@ -35,24 +35,25 @@
 
     <h2>お問い合わせ</h2>
     <form action="/submit" method="POST">
-        <label>
-            <p>お名前：
-            <input type="text" name="username" placeholder="お名前" required></p>
-        </label>
-        <label>
-            <p>お問い合わせ種別：
-            <select name="quesition">
-            <option value="general">一般的なお問い合わせ</option>
-            <option value="comments and requests">ご意見・ご要望</option></select></p>
-        </label>
-        <label>
-            <p>お問い合わせ内容：
-            <textarea name="message" rows="5" cols="40" placeholder="お問い合わせ内容" required></textarea></p>
-        </label>
-        <p><label>
-            送信ボタン：
+        <div>
+            <label for="contact-name">お名前:</label>
+            <input type="text" id="contact-name" name="name" required>
+        </div>
+        <div>
+            <label for="contact-category">お問い合わせ種別:</label>
+            <select id="contact-category" name="category">
+                <option value="">-- 選択してください --</option>
+                <option value="general">一般的なお問い合わせ</option>
+                <option value="feedback">ご意見・ご要望</option>
+            </select>
+        </div>
+        <div>
+            <label for="contact-message">お問い合わせ内容</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
             <button type="submit">送信する</button>
-        </label></p>
+        </div>
     </form>
 </body>
 </html>
